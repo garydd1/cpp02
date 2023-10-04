@@ -8,10 +8,11 @@ public:
 	Point( void );
 	Point(const float x, const float y);
 	Point(const Point& original);
-	Point& operator=(const Point& toCopy);
+	// Point& operator=(const Point& toCopy);
 	~Point( void );
-	Fixed getX( void );
-	Fixed getY( void );
+	float getX( void ) const;
+	float getY( void ) const;
+	bool operator==(const Point& other) const;
 	
 private:
 
